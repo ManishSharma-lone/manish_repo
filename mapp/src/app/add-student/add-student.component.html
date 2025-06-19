@@ -1,0 +1,22 @@
+<div class="form-box">
+  <h2>{{ isEdit ? 'Edit Student' : 'Add Student' }}</h2>
+
+  <label>Name:</label>
+  <input type="text" [(ngModel)]="student.name" />
+
+  <label>Email:</label>
+  <input type="email" [(ngModel)]="student.email" />
+
+  <label>Course:</label>
+  <input type="text" [(ngModel)]="student.course" />
+
+  <label>Date of Birth:</label>
+  <input type="date" [(ngModel)]="student.dob" />
+
+  <div class="btn-group">
+    <button (click)="addOrUpdate()">{{ isEdit ? 'Update' : 'Add' }}</button>
+  </div>
+
+  <div *ngIf="successMsg" class="msg success">{{ successMsg }}</div>
+  <div *ngIf="errorMsg" class="msg error">{{ errorMsg }}</div>
+</div>

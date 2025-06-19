@@ -1,0 +1,51 @@
+.list-box {
+  width: 80%;
+  margin: 30px auto;
+  background: #f1f8ff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #1976d2;
+  color: white;
+}
+
+.edit-btn {
+  background: #ffee58;
+  border: none;
+  padding: 6px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.del-btn {
+  background: #ef5350;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.edit-btn:hover {
+  background: #fdd835;
+}
+
+.del-btn:hover {
+  background: #e53935;
+}
